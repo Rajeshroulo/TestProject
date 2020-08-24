@@ -25,7 +25,6 @@ namespace TestProject
         {
             IWebElement dropdown = driver.FindElement(By.Id("countriesMultiple"));
             SelectElement element = new SelectElement(dropdown);
-
             IList<IWebElement> elements = element.Options;
             Console.WriteLine(elements.Count);
             foreach (var item in elements)
